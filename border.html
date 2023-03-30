@@ -3,11 +3,21 @@
     <head>
         <title>border</title>
         <style>
-            p{
-                font-size: large;
+            .none_line{
+                color:black;
+                text-decoration: none;
+            }
+            .font_cent{
+                text-align: center;
+            }
+            .a{
+                
+                font-family: 'Times New Roman', Times, serif;
+                font-size: xx-large;
                 font-style: italic;
-            text-decoration: overline;
-       background-color: deeppink;
+                font-weight: bold;
+                text-decoration: overline;
+                background-color: deeppink;
                 color: darkblue;
             }
            body{
@@ -17,24 +27,30 @@
            }
            
             .box{
+                height: 70px;
+                box-shadow: 5px 5px 5px #a9a9a9;
                 background-color: antiquewhite;
-                display: inline-block;
+                display: block;
                 border: thick dashed black;
                 border-radius: 30px;
                 border-width: thick;
                 border-color: black;
                 border-style: dashed;
             }
+            .box>a{
+                display: block;
+                line-height: 70px;
+            }
         </style>
     </head>
     <body>
         <div class="box">
-            <h1>aimyon zzang</h1>
+            <a class="font_cent">aimyon zzang</a>
         </div>
         <div class="box">
-            <h1><a href="https://namu.wiki/w/%EC%95%84%EC%9D%B4%EB%AC%AD">아이묭나무위키임</a></h1>
+            <a href="https://namu.wiki/w/%EC%95%84%EC%9D%B4%EB%AC%AD" class="none_line font_cent">아이묭나무위키임</a>
         </div>
-        <p>あいみょん
+        <p class="a">あいみょん
             아이묭｜Aimyon
             s18 愛の花
             본명
